@@ -1,1 +1,188 @@
-/* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+
+body {
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE;
+}
+
+h1 {
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+h2 {
+	color: #BC6026;
+}
+
+nav svg{
+	fill: white;
+}
+
+svg {
+	height: 1em;
+	margin-left: 15px;
+	fill: #D87E28; 
+}
+
+nav {
+	position: fixed;
+	background-color: #181C22;
+	z-index: 1;
+	width: 100%;
+}
+
+nav li {
+	padding: 0.5em;
+	font-size: 16px;
+	display: inline;
+	margin-left: 15px;
+}
+
+nav a{
+	font-variant: small-caps;
+	color: white;
+}
+
+a:hover {
+	color: #D87E28;
+	text-decoration: none;
+}
+
+svg:hover {
+	fill: #D87E28;
+}
+
+header {
+	padding-top: 3em;
+	background-repeat: no-repeat;
+}
+
+header p {
+	visibility: hidden;
+}
+
+#headline {
+	font-style: italic;
+}
+
+#headline svg {
+	visibility: hidden;
+}
+
+#cafe {
+	background-color: #dbdce3;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+a>img{
+	border-radius: 5px;
+}
+
+#location img {
+	padding bottom: 1em;
+}
+
+dd{
+	font-style: italic;
+	padding-left: 1em;
+}
+
+#story img {
+	float: right;
+	max-height: 300px;
+	margin-left: 1em;
+	border-radius: 5px;
+}
+
+#story {
+	background-color: #dbdce3;
+}
+
+footer {
+	border-top: 3px solid #D87E28;
+	background-color: #afb3c2;
+	font-size: 12px;
+	padding: 1em;
+}
+
+footer.clear {
+	clear:both;
+}
+
+@media (min-width: 768px) {
+	body{
+		font-size: 20px;
+	}
+
+	h2 {
+		text-align: center;
+		padding-bottom: 1em;
+	}
+
+	nav {
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+
+	header p {
+		visibility: visible;
+	}
+
+	li {
+		padding-left:1em;
+		padding-right: 1em;
+	}
+
+	header {
+		background-image: url("../img/background-sm.jpg");
+		background-size: 100%;
+		color: white;
+		text-align: right;
+		min-height: 550px;
+	}
+
+	#headline svg {
+		visibility: visible;
+		height: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	#headline {
+		font-size: 1.25em;
+		text-align: center;
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+	#story img {
+		max-height: 400px;
+	}
+
+	#iconby p {
+		float: right;
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		background-image: url("../img/background-lg.jpg");
+	}
+
+}
+
+@media (min-width: 992px) {
+	header {
+		background-image: url("../img/background-md.jpg");
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+}
+
